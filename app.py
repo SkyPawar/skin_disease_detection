@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing import image
 import numpy as np
 
 # 🔹 Google Drive File ID
-file_id = "1_OA1NHqirp4C242UeZxrw3Wvnba7Bk6t" https://drive.google.com/file/d/1_OA1NHqirp4C242UeZxrw3Wvnba7Bk6t/view?usp=sharing
+file_id = "1_OA1NHqirp4C242UeZxrw3Wvnba7Bk6t" 
 
 # 🔹 Google Drive Direct Download Link
 download_url = f"https://drive.google.com/uc?id={1_OA1NHqirp4C242UeZxrw3Wvnba7Bk6t}"
