@@ -1,24 +1,16 @@
-import gdown
 import os
 import tensorflow as tf
 from flask import Flask, request, render_template, session
 from tensorflow.keras.preprocessing import image
 import numpy as np
 
-# 🔹 Google Drive File ID
-file_id = "1_OA1NHqirp4C242UeZxrw3Wvnba7Bk6t" 
-
-# 🔹 Google Drive Direct Download Link
-download_url = f"https://drive.google.com/uc?id={"1_OA1NHqirp4C242UeZxrw3Wvnba7Bk6t"}"
 
 app = Flask(__name__)
 app.secret_key = "supersecretkey"  # Required for session management
 
 model_path = "model.h5"
 if not os.path.exists(model_path):
-    print("Downloading model from Google Drive...")
-    # print(f"❌ Model file missing: {model_path}")
-    gdown.download(download_url, model_path, quiet=False)
+    print(f"❌ Model file missing: {model_path}")
 else:
     print("✅ Model found! Loading...")
     model = tf.keras.models.load_model(model_path)
