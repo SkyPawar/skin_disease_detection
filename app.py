@@ -14,7 +14,7 @@ download_url = f"https://drive.google.com/uc?id={1_OA1NHqirp4C242UeZxrw3Wvnba7Bk
 app = Flask(__name__)
 app.secret_key = "supersecretkey"  # Required for session management
 
-model_path = "model.h5""
+model_path = "model.h5"
 if not os.path.exists(model_path):
     print("Downloading model from Google Drive...")
     # print(f"❌ Model file missing: {model_path}")
