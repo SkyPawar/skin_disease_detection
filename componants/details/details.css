@@ -1,0 +1,148 @@
+.headerDetails header {
+    background-color: #fff;
+    color: #2b2b2b;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+}
+
+.headerDetails header .doctorWrp {
+    font-size: 20px;
+}
+
+.drDatalist .MuiAvatar-circular.MuiAvatar-colorDefault,
+.doctorDetail .MuiAvatar-circular.MuiAvatar-colorDefault {
+    background-color: #000;
+}
+
+.drDatalist .cardHeader .MuiCardHeader-avatar {
+    margin-right: 0 !important;
+}
+
+.drDatalist .cardHeader {
+    padding: 0;
+}
+
+.doctorDetail .cardHeader {
+    padding: 0 0 10px 0;
+}
+
+.cardHistory,
+.doctorDetail {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.doctorDetail p {
+    font-size: 12px;
+    color: #5a5a5a;
+}
+
+.doctorDetail button {
+    background-color: #000;
+    padding: 8px 19px;
+    font-size: 11px;
+    color: #fff;
+}
+
+.doctorDetail .moreBtn {
+    font-size: 10px;
+    padding: 12px 19px;
+}
+
+
+.moreBtn label {
+    color: #fff;
+}
+
+.moreBtn label select:focus-visible {
+    outline: none;
+}
+
+
+.doctorDetail button:focus,
+.doctorDetail button:focus-visible {
+    outline: none;
+}
+
+.doctorDetail button svg {
+    font-size: 11px;
+}
+
+.doctorDetail .statusBtn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0 0 0 !important;
+}
+
+.drDatalist {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.drDetails .drName {
+    margin-bottom: 5px;
+}
+
+.drDetails .dataList {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.drDetails .dataList .noDoctor {
+    background-color: #000;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.performanceData .menuList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.drDatalist .cardInfo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.drDatalist {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.performanceData .menuList p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.performanceData .barInfo svg {
+    width: 100%;
+    height: 60%;
+}
+
+.detailList {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detailList .infoBtn {
+    background-color: #000;
+    color: #fff;
+    padding: 16px 34px;
+}
