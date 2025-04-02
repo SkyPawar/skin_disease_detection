@@ -1,0 +1,87 @@
+.account-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #222;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.user-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.user-card {
+    background: white;
+    border-radius: 8px;
+    padding: 12px;
+    /* Reduced padding */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    min-height: 140px;
+    /* Reduced height */
+}
+
+.user-card:hover {
+    transform: scale(1.03);
+}
+
+h3 {
+    color: #007bff;
+    margin-bottom: 5px;
+    font-size: 16px;
+    /* Reduced font size */
+}
+
+p {
+    color: #555;
+    font-style: italic;
+    font-size: 14px;
+    /* Reduced font size */
+}
+
+.userDetail .userInfo .userName {
+    border-radius: 4px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.userDetail .userInfo {
+    border-radius: 8px;
+}
+
+.userDetail {
+    max-width: 400px;
+    width: 100%;
+}
+
+.accountsBox {
+    padding-left: 0 ; 
+}
+
+@media only screen and (max-width: 767px) {
+    .userDetail .userInfo .userName {
+        max-width: fit-content;
+        width: 100%;
+        
+    }
+  }

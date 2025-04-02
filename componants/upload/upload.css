@@ -63,13 +63,16 @@ video{
 }
 
 .fileListMenu {
-    margin: 15px 0 25px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 13px 11px;
+    justify-content: center;
+    padding: 13px 0px;
     border: 1px solid #E3E3E3;
-    border-radius: 4px;
+    background-color: #fff;
+    max-width: 60%;
+    margin: 0 auto;
+    flex-direction: column;
+    border-radius: 10px;
 }
 
 .documentMenu p,
@@ -116,6 +119,7 @@ video{
     margin: 24px auto 0 auto;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 25px;
 }
@@ -153,9 +157,16 @@ video{
         background: radial-gradient(circle at center, #e6e6e6c2, #e6e6e6),
         url("/src/assets/images/doctor-1.jpg");
         background-position: center;
-        height: 1000px;
+        /* height: 1000px; */
 }
-
+.buttonBox{
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ 
 @media only screen and (max-width: 1199px) {
     .uploadFiles {
         padding: 12px 24px;
@@ -175,7 +186,7 @@ video{
 
   @media only screen and (max-width: 991px) {
     .uploadScreen {
-        height: 950px;
+        /* height: 950px; */
     }
   }
 
@@ -208,3 +219,4 @@ video{
         height: 50px;
     } */
   }
+

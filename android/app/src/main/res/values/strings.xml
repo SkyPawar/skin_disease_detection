@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">skin_disease</string>
+    <string name="title_activity_main">skin_disease</string>
+    <string name="package_name">com.skindisease.app</string>
+    <string name="custom_url_scheme">com.skindisease.app</string>
+</resources>

@@ -5,6 +5,7 @@ import KeyboardDoubleArrowRightRoundedIcon from "@mui/icons-material/KeyboardDou
 import { useState } from "react";
 import "./splashscreen.css";
 import { useNavigate } from "react-router-dom";
+import BottomNavigationBar from "../navigationBar/BottomNavbar";
 
 function Splashscreen() {
   const navigate = useNavigate();
@@ -23,11 +24,11 @@ function Splashscreen() {
         <Container className="root" maxWidth="sm">
           <Box className="splashData">
             <Box className="splashHeader">
-              <Button variant="contained" size="medium" className="btn">
+              {/* <Button variant="contained" size="medium" className="btn">
                 <VaccinesRoundedIcon size="small" />
-              </Button>
+              </Button> */}
               <Button variant="contained" size="medium" className="btn">
-                Helth Insurans
+                Healthy Skin
               </Button>
             </Box>
             <Box className="splashBody">
@@ -60,6 +61,8 @@ function Splashscreen() {
           </Box>
         </Container>
       </Box>
+  {/* <BottomNavigationBar/> */}
+      
     </>
   );
 }

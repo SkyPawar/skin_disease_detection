@@ -1,5 +1,6 @@
 .splashScreen {
   width: 100%;
+  height: 100vh;
   background-color: #fff;
   background: radial-gradient(circle at center, #e6e6e6c2, #e6e6e6),
     url("../../src/assets/images/doctor-1.jpg");
@@ -11,14 +12,17 @@
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
+  overflow: auto;
 }
-
+.MuiBox-root {
+  left: 0;
+}
 .splashHeader {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: 15px;
+  padding: 15px;
 }
 
 .splashHeader button {
@@ -27,7 +31,7 @@
 }
 
 .splashBody {
-  height: calc(100vh - 30vh);
+  height: calc(100vh - 40vh);
   display: flex;
   align-items: end;
   justify-content: end;
