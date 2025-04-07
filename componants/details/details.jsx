@@ -196,7 +196,7 @@ function Details() {
               <Typography>Orthopedic Specialist</Typography>
               <CardContent className="statusBtn">
                 <Button>
-                  Ofline
+                  Offline
                   {/* <Badge
               color="secondary"
               variant="dot"

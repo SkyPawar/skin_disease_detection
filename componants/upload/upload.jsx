@@ -393,27 +393,7 @@ function Upload() {
                         <Box className="headerDetails capatureDetails">
                           <Box className="predicetedInfo">
                             <Grid container spacing={2} sx={{ marginTop: 2 }}>
-                              <Grid item xs={12} lg={12} sm={12} md={12} key={value.prediction} className="capaturedetails">
-                                <Box className="protectedImg">
-                                  <CardMedia
-                                    sx={{
-                                      padding: 1,
-                                      borderRadius: 1,
-                                      boxShadow: 3,
-                                      backgroundColor: "#f5f5f5",
-                                      objectFit: "contain",
-                                      marginLeft: "15px",
-                                      margin: "0 auto",
-                                      width: "fit-content"
-                                    }}
-                                    component="img"
-                                    height="140"
-                                    image={value.image_url}
-                                    // alt={"brain-stroke"}
-                                    alt="Predicted Disease"
-                                  />
-                                </Box>
-                              </Grid>
+                              {/* Removed image block here */}
                               <Grid item xs={12} lg={12} sm={12} md={12} key={value.prediction}>
                                 <Card
                                   sx={{
@@ -430,12 +410,10 @@ function Upload() {
                                     </Toolbar>
                                   </AppBar>
                                   <CardContent>
-                                    {/* Disease Name */}
                                     <Typography variant="h6" fontWeight="bold" color="primary">
                                       {value.prediction}
                                     </Typography>
 
-                                    {/* Medicine */}
                                     <Typography variant="body1" fontWeight="bold" sx={{ marginTop: 2 }}>
                                       medicamento:
                                     </Typography>
@@ -443,22 +421,18 @@ function Upload() {
                                       {value?.medicamento || "No specific medicamento found."}
                                     </Typography>
 
-                                    {/* Remedy */}
                                     <Typography variant="body1" fontWeight="bold" sx={{ marginTop: 2 }}>
                                       Remedio Casero:
                                     </Typography>
                                     <Typography variant="body2">
                                       {value?.recurso || "No recurso available."}
                                     </Typography>
-
-
                                   </CardContent>
                                 </Card>
                               </Grid>
                             </Grid>
                           </Box>
                         </Box>
-
                       ) : (
                         <ListItemText
                           primary={value.prediction}
